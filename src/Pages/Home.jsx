@@ -11,7 +11,7 @@ const Home = () => {
 
       <div className="relative flex gap-8 h-[80vh] justify-center items-center w-full">
         <div className="w-2/6">
-          <div className="bg-[rgba(39,74,105,0.5)] w-130 h-130 px-8 rounded-full flex items-center justify-center">
+          <div className="bg-[#072F53] w-130 h-130 px-8 rounded-full flex items-center justify-center">
             <img src={HomeHero} alt="hero" className="w-[75%]" />
           </div>
         </div>
