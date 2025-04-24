@@ -1,5 +1,5 @@
-import HomBg from "../assets/Home-bg.png";
-import HomeHero from "../assets/Home-hero.png";
+import HomBg from "../../assets/Home-bg.png";
+import HomeHero from "../../assets/Home-hero.png";
 
 const Home = () => {
   return (

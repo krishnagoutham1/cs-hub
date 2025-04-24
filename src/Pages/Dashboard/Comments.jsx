@@ -1,6 +1,6 @@
-import Avaart1 from "../assets/avatar1.jpeg";
-import Avaart2 from "../assets/avatar2.jpeg";
-import Avaart3 from "../assets/avatar3.jpeg";
+import Avaart1 from "../../assets/avatar1.jpeg";
+import Avaart2 from "../../assets/avatar2.jpeg";
+import Avaart3 from "../../assets/avatar3.jpeg";
 
 const testimonials = [
   {

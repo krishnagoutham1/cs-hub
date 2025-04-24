@@ -1,35 +1,4 @@
-// import ContactImg from "../assets/contact.png";
-
-// const Contact = () => {
-//   return (
-//     <div className="flex px-[5%]">
-//       <div className="w-3/5 flex justify-end border">
-//         <img src={ContactImg} className="w-140" />
-//       </div>
-//       <div className="w-1/2">
-//         <h1>Get in touch with us ?</h1>
-//         <h1>Call us on our number</h1>
-//         <p>9999999999</p>
-//         <div>
-//           <label>Full name</label>
-//           <input type="text" className="borderp-3" />
-//         </div>
-//         <div>
-//           <label>Email</label>
-//           <input type="email" />
-//         </div>
-//         <div>
-//           <label>Message</label>
-//           <input type="textarea" />
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Contact;
-
-import ContactImg from "../assets/contact.png";
+import ContactImg from "../../assets/contact.png";
 
 const Contact = () => {
   return (

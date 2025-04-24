@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import Logo from "../assets/logo.png";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const listData = [
     { name: "Trending now", target: "/" },
     { name: "HTML", target: "/" },
@@ -23,7 +25,7 @@ const Navbar = () => {
     <div>
       <div className="bg-white flex items-center justify-evenly">
         <div>
-          <img src={Logo} alt="cs-hub" className="w-36" />
+          <img src={Logo} alt="cs-hub" className="w-40" />
         </div>
         <div className="w-2/6">
           <input
@@ -49,7 +51,12 @@ const Navbar = () => {
           </ul>
         </div>
         <div>
-          <button className="rounded-full bg-[#FBC108] px-5 py-1">Login</button>
+          <button
+            className="rounded-full bg-[#FBC108] px-5 py-1"
+            onClick={() => navigate("/auth/login")}
+          >
+            Login
+          </button>
         </div>
       </div>
       <div className="bg-[#F1F1F1] w-full flex items-center">

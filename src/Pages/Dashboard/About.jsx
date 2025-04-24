@@ -1,10 +1,10 @@
-import AboutDots from "../assets/about-dots.png";
+import AboutDots from "../../assets/about-dots.png";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { BsFillBuildingsFill } from "react-icons/bs";
 import { FaNewspaper } from "react-icons/fa6";
-import CurvesBg from "../assets/Home-bg.png";
-import AnimeBg from "../assets/about-hero.jpeg";
-import PeopleGroup from "../assets/peopleGroup.jpeg";
+import CurvesBg from "../../assets/Home-bg.png";
+import AnimeBg from "../../assets/about-hero.jpeg";
+import PeopleGroup from "../../assets/peopleGroup.jpeg";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { FaJs } from "react-icons/fa";

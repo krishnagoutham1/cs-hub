@@ -1,4 +1,4 @@
-import Accordain from "../Components/Accordain";
+import Accordain from "../../Components/Accordain";
 
 const Faq = () => {
   return (

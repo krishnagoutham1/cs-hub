@@ -1,4 +1,4 @@
-import FeatureHero from "../assets/features.avif";
+import FeatureHero from "../../assets/features.avif";
 import { IoBookSharp } from "react-icons/io5";
 import { GrTest } from "react-icons/gr";
 import { FaBook } from "react-icons/fa";
