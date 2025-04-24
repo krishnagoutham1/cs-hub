@@ -45,8 +45,11 @@ const Navbar = () => {
             <li className="cursor-pointer hover:font-bold hover:underline px-2">
               CBSE
             </li>
-            <li className="cursor-pointer hover:font-bold hover:underline px-2">
-              CUET
+            <li
+              className="cursor-pointer hover:font-bold hover:underline px-2"
+              onClick={() => navigate("/portfolio")}
+            >
+              Protfolio
             </li>
           </ul>
         </div>

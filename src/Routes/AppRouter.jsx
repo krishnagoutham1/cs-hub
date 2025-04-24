@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import AuthLayout from "../Components/AuthLayout";
+import AuthLayout from "../Components/Layouts/AuthLayout";
 import Login from "../Pages/auth/Login";
 import Register from "../Pages/auth/Register";
 import VerifyEmail from "../Pages/auth/VerifyEmail";
@@ -13,6 +13,12 @@ import Unauthorized401 from "../Pages/statusPages/401";
 import LinkExpired from "../Pages/statusPages/LinkExpired";
 import CommingSoon from "../Pages/statusPages/CommingSoon";
 import Dashboard from "../Pages/Dashboard/Dashboard";
+import Portfolio from "../Pages/Portfolio/Portfolio";
+import PortfolioDashboard from "../Pages/Portfolio/PortfolioDashboard";
+import PortfolioSettings from "../Pages/Portfolio/PortfolioSettings";
+import PortfolioTemplates from "../Pages/Portfolio/PortfolioTemplates";
+import PortfolioExplore from "../Pages/Portfolio/PortfolioExplore";
+import PortfolioLayout from "../Components/Layouts/PortfolioLayout";
 
 const AppRouter = () => {
   return (
@@ -24,6 +30,15 @@ const AppRouter = () => {
       <Route path="/commingSoon" element={<CommingSoon />} />
 
       <Route path="/" element={<Dashboard />} />
+
+      <Route path="/portfolio" element={<PortfolioLayout />}>
+        <Route index element={<PortfolioExplore />} />
+        <Route path="explore" element={<PortfolioExplore />} />
+        <Route path="dashboard" element={<PortfolioDashboard />} />
+        <Route path="portfolio" element={<Portfolio />} />
+        <Route path="templates" element={<PortfolioTemplates />} />
+        <Route path="settings" element={<PortfolioSettings />} />
+      </Route>
 
       <Route path="/verify-email/:token" element={<VerifyEmail />} />
       <Route path="/login-otp" element={<LoginOtp />} />

@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import AuthImg from "../assets/AuthImg.jpg";
+import AuthImg from "../../assets/AuthImg.jpg";
 
 const AuthLayout = () => {
   return (
