@@ -19,7 +19,11 @@ const navItems = [
     path: "/portfolio/dashboard",
     icon: <FaTachometerAlt />,
   },
-  { name: "Portfolio", path: "/portfolio/portfolio", icon: <FaUserEdit /> },
+  {
+    name: "Portfolio Profile",
+    path: "/portfolio/profile",
+    icon: <FaUserEdit />,
+  },
   {
     name: "Template Library",
     path: "/portfolio/templates",
@@ -30,7 +34,10 @@ const navItems = [
 
 const PortfolioLayout = () => {
   const { pathname } = useLocation();
-  const currentPage = pathname.split("/").pop().replace("-", " ");
+  // console.log(pathname.split("/")[2]);
+  // const currentPage = pathname.split("/").pop().replace("-", " ");
+  const currentPage = pathname.split("/")[2];
+
   const [open, setOpen] = useState(true);
 
   return (

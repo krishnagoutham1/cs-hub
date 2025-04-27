@@ -13,12 +13,22 @@ import Unauthorized401 from "../Pages/statusPages/401";
 import LinkExpired from "../Pages/statusPages/LinkExpired";
 import CommingSoon from "../Pages/statusPages/CommingSoon";
 import Dashboard from "../Pages/Dashboard/Dashboard";
-import Portfolio from "../Pages/Portfolio/Portfolio";
 import PortfolioDashboard from "../Pages/Portfolio/PortfolioDashboard";
 import PortfolioSettings from "../Pages/Portfolio/PortfolioSettings";
 import PortfolioTemplates from "../Pages/Portfolio/PortfolioTemplates";
 import PortfolioExplore from "../Pages/Portfolio/PortfolioExplore";
 import PortfolioLayout from "../Components/Layouts/PortfolioLayout";
+import PortfolioProfileLayout from "../Components/Layouts/PortfolioProfileLayout";
+import BasicInfo from "../Pages/Portfolio/PortfolioSteps/BasicInfo";
+import Certifications from "../Pages/Portfolio/PortfolioSteps/Certifications";
+
+import Education from "../Pages/Portfolio/PortfolioSteps/Education";
+import Experience from "../Pages/Portfolio/PortfolioSteps/Experience";
+import Projects from "../Pages/Portfolio/PortfolioSteps/Projects";
+import Skills from "../Pages/Portfolio/PortfolioSteps/Skills";
+import SocialLinks from "../Pages/Portfolio/PortfolioSteps/SocialLinks";
+import Achievements from "../Pages/Portfolio/PortfolioSteps/Achievements";
+import Contact from "../Pages/Portfolio/PortfolioSteps/Contact";
 
 const AppRouter = () => {
   return (
@@ -35,7 +45,17 @@ const AppRouter = () => {
         <Route index element={<PortfolioExplore />} />
         <Route path="explore" element={<PortfolioExplore />} />
         <Route path="dashboard" element={<PortfolioDashboard />} />
-        <Route path="portfolio" element={<Portfolio />} />
+        <Route path="profile" element={<PortfolioProfileLayout />}>
+          <Route path="basic-info" element={<BasicInfo />} />
+          <Route path="certifications" element={<Certifications />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="education" element={<Education />} />
+          <Route path="experience" element={<Experience />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="skills" element={<Skills />} />
+          <Route path="social-links" element={<SocialLinks />} />
+          <Route path="achievements" element={<Achievements />} />
+        </Route>
         <Route path="templates" element={<PortfolioTemplates />} />
         <Route path="settings" element={<PortfolioSettings />} />
       </Route>
